@@ -98,7 +98,7 @@ const POW = () => {
 										<Link
 										href="https://x.com/stark_con/status/1628659312498462721">
 										<p className='text-lg font-light text-white mr-6'>
-											Organised Inida's first Cairo bootcamp
+											Organised Inida&apos;s first Cairo bootcamp
 										</p>
 										</Link>	
 									</div>
