@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const POW = () => {
@@ -23,12 +24,14 @@ const POW = () => {
 								<div className='w-full h-4/5 p-5 relative'>
 									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
 										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											Web3Conf GOA 2022
+											Exa Days by Exa Protocol
 										</h2>
-										<p className='text-lg font-light text-white mr-6'>
-											Valist Keynote at Web3Conf GOA in
-											2022.
+										<Link
+											href='https://x.com/ExaProtocol/status/1656280478591201283'>
+										<p className='text-lg font-light text-white mr-6 text-underline'>
+											L1 Blockchains and Decentralisation - Guest Speaker
 										</p>
+										</Link>
 									</div>
 								</div>
 							</div>
