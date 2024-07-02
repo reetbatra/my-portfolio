@@ -16,19 +16,18 @@ const POW = () => {
 					Giving back to the community that has given me strength to
 					strive in this industry.
 				</p>
-
 				<div className='grid grid-cols-1 gap-6   lg:grid-cols-4 '>
 					<p className='shadow-2xl relative'>
 						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
 							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
 								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
+									<div className='absolute bottom-0 group-hover:bottom-10 text-white text-left transition-all ease-in-out duration-500'>
 										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
 											Exa Days by Exa Protocol
 										</h2>
 										<Link
 											href='https://x.com/ExaProtocol/status/1656280478591201283'>
-										<p className='text-lg font-light text-white mr-6 text-underline'>
+										<p className='text-lg font-light text-white mr-6 font-underline'>
 											L1 Blockchains and Decentralisation - Guest Speaker
 										</p>
 										</Link>
@@ -45,14 +44,16 @@ const POW = () => {
 						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
 							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
 								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
+									<div className='absolute bottom-0 group-hover:bottom-10 text-white text-left transition-all ease-in-out duration-500'>
 										<h2 className='text-2xl font-bold text-white mt-6 mb-0 pb-1'>
-											HTL - Jaipur
+											Tribe Academy Workshop
 										</h2>
-										<p className='text-lg font-light text-white mr-6'>
-											Workshop sessions at Hack The League
-											Meetups - Jaipur and Mumbai.
+										<Link
+										href='https://x.com/tribeacademy_in/status/1659239504149118977'>
+											<p className='text-lg font-light text-white mr-6'>
+											Exploring DevRel as a career choice- Guest Speaker
 										</p>
+										</Link>	
 									</div>
 								</div>
 							</div>
@@ -66,14 +67,17 @@ const POW = () => {
 						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
 							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
 								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
+									<div className='absolute bottom-0 group-hover:bottom-10 text-white text-left transition-all ease-in-out duration-500'>
 										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											HTL - Mumbai
+											StarkCon offline meetups
 										</h2>
+										<Link
+										href="https://x.com/stark_con/status/1605872741944418305">
 										<p className='text-lg font-light text-white mr-6'>
-											Workshop sessions at Hack The League
-											Meetups - Jaipur and Mumbai.
+											Had a pleasure teaching Cairo to 4800+ devs pan Inida
 										</p>
+										</Link>
+										
 									</div>
 								</div>
 							</div>
@@ -87,88 +91,26 @@ const POW = () => {
 						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
 							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
 								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
+									<div className='absolute bottom-0 group-hover:bottom-10 text-white text-left transition-all ease-in-out duration-500'>
 										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											FILBanglore 2022
+											StarkCon Cairo Bootcamp
 										</h2>
+										<Link
+										href="https://x.com/stark_con/status/1628659312498462721">
 										<p className='text-lg font-light text-white mr-6'>
-											A Valist worshop session at the
-											first edition of FILBanglore.
+											Organised Inida's first Cairo bootcamp
 										</p>
+										</Link>	
 									</div>
 								</div>
 							</div>
 							<img
-								src='/images/p4.jpeg'
+								src='/images/p4.png'
 								className='w-full z-0 h-full object-fill example'
 							/>
 						</div>
 					</p>
-					<p className='shadow-2xl relative'>
-						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
-							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
-								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
-										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											Zeeve.io Panelist
-										</h2>
-										<p className='text-lg font-light text-white mr-6'>
-											Had a pleasure serving as one of the
-											panelist at Zeeve.io meetup.
-										</p>
-									</div>
-								</div>
-							</div>
-							<img
-								src='/images/p5.jpeg'
-								className='w-full z-0 h-full object-fill example'
-							/>
-						</div>
-					</p>
-					<p className='shadow-2xl relative'>
-						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
-							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
-								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
-										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											Hack For India
-										</h2>
-										<p className='text-lg font-light text-white mr-6'>
-											Had a pleasure serving as one of the
-											Mentor/Judge at Hack For India
-											Hackathon.
-										</p>
-									</div>
-								</div>
-							</div>
-							<img
-								src='/images/p6.jpeg'
-								className='w-full z-0 h-full object-fill example'
-							/>
-						</div>
-					</p>
-					<p className='shadow-2xl relative'>
-						<div className='h-full relative rounded-lg overflow-hidden shadow-slate-700 group'>
-							<div className='absolute -bottom-10 group-hover:top-0 left-0 w-full h-full group-hover:bg-purple-700 transition-all ease-in-out duration-500'>
-								<div className='w-full h-4/5 p-5 relative'>
-									<div className='absolute bottom-0 group-hover:bottom-24 text-white text-left transition-all ease-in-out duration-500'>
-										<h2 className='text-2xl font-bold text-white mb-0 pb-1'>
-											Hack The Mountains
-										</h2>
-										<p className='text-lg font-light text-white mr-6'>
-											Had a pleasure serving as one of the
-											Judges at Hack The Mountains 4.0
-											Hackathon.
-										</p>
-									</div>
-								</div>
-							</div>
-							<img
-								src='/images/p7.jpeg'
-								className='w-full z-0 h-full object-fill example'
-							/>
-						</div>
-					</p>
+				
 				</div>
 			</div>
 		</section>

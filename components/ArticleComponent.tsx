@@ -12,31 +12,31 @@ interface Article {
 
 const topArticles: Article[] = [
   {
-    title: "Learn to use Supabase with Next JS - A Beginner Friendly Application",
+    title: "Dive deeper: Polygon's zkEVM",
     content:
-      "Building a simple application using Supabase on the backend and Next JS on the front end. This tutorial aims to help you grasp the process of easily writing and retrieving data from a database.",
+      "Breaking down the complexities: Everything you need to know about Polygon's zkEVM and its significance.",
     bloglink:
-      "https://aahiknsv.hashnode.dev/learn-to-use-supabase-with-next-js-a-beginner-friendly-application",
+      "https://reet.hashnode.dev/dive-deeper-polygons-zkevm",
   },
   {
-    title: "Building a TODO Application in Solidity",
+    title: "A beginners guide on How to build and publish your own NPM package",
     content:
-      "The article demonstrates how to create a to-do application using Solidity, a programming language for Ethereum smart contracts, providing a guide on building decentralized task management on the blockchain.",
-    bloglink: "https://aahiknsv.hashnode.dev/building-a-todo-application-in-solidity",
+      "Level Up Your Dev Skills: Build and Publish an npx Package Today!",
+    bloglink: "https://reet.hashnode.dev/a-beginners-guide-on-how-to-build-and-publish-your-own-npm-package",
   },
   {
-    title: "Building a Simple Timer with Vanilla JavaScript",
+    title: "A guide to Account Abstraction & BUILDing a dApp with Biconomy",
     content:
-      "The article provides a step-by-step guide for building a basic timer application in Vanilla JavaScript without additional frameworks or libraries.",
+      "Leveraging Biconomy's SDK for developing dApps that anyone can use",
     bloglink:
-      "https://aahiknsv.hashnode.dev/building-a-simple-timer-with-vanilla-javascript",
+      "https://reet.hashnode.dev/a-guide-to-account-abstraction-building-a-dapp-with-biconomy",
   },
   {
-    title: "How to Send Emails in Node JS using the SendGrid API",
+    title: "Mina Protocol Uncovered: Developing Your Own zkApp",
     content:
-      "The article guides integrating SendGrid with Node.js for efficient email delivery, covering key steps like API key setup, email composition, and sending via the SendGrid service.",
+      "A Hands-On Journey into Mina's Blockchain and Zero-Knowledge App Development",
     bloglink:
-      "https://aahiknsv.hashnode.dev/how-to-send-emails-in-node-js-using-the-sendgrid-api",
+      "https://reet.hashnode.dev/mina-protocol-uncovered-developing-your-own-zkapp",
   },
   // Add more articles as needed
 ];
