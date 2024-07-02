@@ -2,56 +2,38 @@ import React from "react";
 
 const projects = [
 	{
-		title: "Moon Bunny",
-		stack: "Phaser JS ",
+		title: "Defi Sync",
+		stack: "Next JS | Tailwind CSS | Rainbow kit |",
 		description:
-			"A fun little practice game made with Phaser JS. All you have to do is collect carrots and get a high score. EzzPzz 😄",
-		githubLink: "https://github.com/Vanshika-Rana/bunny-jump-game",
-		vercelLink:
-			"https://gateway.valist.io/ipfs/bafybeibszyhygcrzcf2bdq4gyvbja4xt6nqcu44b4zsy64ghsu56xoc32m/",
+			"Know the updated price with charts of most popular coins.",
+		githubLink: "https://github.com/reetbatra/defi-sync",
+		vercelLink: "https://defi-sync.vercel.app/",
 	},
 	{
-		title: "Manodaya Homes",
+		title: "Sushi Man",
+		stack: "HTML | CSS | Vanilla JS",
+		description:
+			"A fun little cute sushi themed website",
+		githubLink: "https://github.com/reetbatra/sushi-man",
+		vercelLink:
+			"https://sushi-man-three.vercel.app/",
+	},
+	{
+		title: "NFT Minter thirdweb",
+		stack: "Solidity | Thirdweb | Next JS | Tailwind CSS",
+		description:
+			"NFT Minter using thirdweb",
+		githubLink: "https://github.com/reetbatra/nft-minter-thirdweb",
+		vercelLink: "https://nft-minter-thirdweb.vercel.app/",
+	},
+	{
+		title: "Brainwave",
 		stack: "Next JS | Tailwind CSS",
 		description:
-			"Website made for a tourist homestay business, with Google Form integration.",
-		githubLink: "https://github.com/Vanshika-Rana/tourist-homestay",
-		vercelLink: "https://www.manodayahomes.in/",
-	},
-	{
-		title: "SafeBet",
-		stack: "Solidity | Chainlink | Next JS | Tailwind CSS",
-		description:
-			"Your Decentralized Betting Buddy! If you want to bet in the world of Web3, SafeBet is the best choice. A dApp that will help you bet on things that excites you the most!",
-		githubLink: "https://github.com/Vanshika-Rana/safebet",
-		vercelLink: "https://safebet.vercel.app/",
-	},
-
-	{
-		title: "Rcmnd",
-		stack: "Python | Streamlit",
-		description:
-			"Machine Learning model built to recommend K-Dramas that users will like to watch next. It takes their recent drama name as input and provides list of suggestions that matches the plot of their already seen drama.",
-		githubLink: "https://github.com/Vanshika-Rana/RCMND",
-		vercelLink: "https://4x5neh5jzujhjfauls77vq.streamlit.app/",
-	},
-	{
-		title: "Story Sphere",
-		stack: "Next JS | Tailwind CSS | Supabase | Typescript",
-		description:
-			"Craft a unique narrative by collaborating with individuals from diverse backgrounds. Let your imagination run wild as you weave a tale together, creating connections and memories that last a lifetime.",
-		githubLink: "https://github.com/Vanshika-Rana/storycreator-app",
-		vercelLink: "https://storycreator-app.vercel.app/",
-	},
-
-	{
-		title: "Social Circle",
-		stack: "Solidity | Next JS | Tailwind CSS | Ethers",
-		description:
-			"Who doesn't like getting fun messages from friends? A dApp built on Ethereum blockchain that allows you to connect your wallet and drop a few messages :)",
-		githubLink: "https://github.com/Vanshika-Rana/Social-Circle",
-		vercelLink: "https://social-circle.vercel.app/",
-	},
+			"A modern ui with animations",
+		githubLink: "https://github.com/reetbatra/brainwave",
+		vercelLink: "https://reet-brainwave.netlify.app/",
+	}
 ];
 
 const Project: React.FC = () => {
