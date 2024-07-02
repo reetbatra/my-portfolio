@@ -4,12 +4,12 @@ import GLOBE from "vanta/src/vanta.globe";
 import Link from "next/link";
 import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 export default function Hero() {
 	const [vantaEffect, setVantaEffect] = useState(0);
 	const vantaRef = useRef(null);
-
+ 
 	useEffect(() => {
 		if (!vantaEffect) {
 			setVantaEffect(
@@ -30,7 +30,7 @@ export default function Hero() {
 		}
 	}, [vantaEffect]);
 	return (
-		<div
+		<div 
 			className='bg-slate-950 min-h-screen w-full flex flex-col justify-center items-start text-gray-200'
 			ref={vantaRef}>
 			<div className=' mx-12 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32'>
@@ -47,6 +47,14 @@ export default function Hero() {
 						passHref>
 						<p rel='noopener noreferrer'>
 							<FaGithub />
+						</p>
+					</Link>
+					<Link
+						href='https://reet.hashnode.dev/'
+						target='_blank'
+						passHref>
+						<p rel='noopener noreferrer'>
+							<FaDev />
 						</p>
 					</Link>
 					<Link
