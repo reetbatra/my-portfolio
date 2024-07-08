@@ -45,7 +45,14 @@ const topArticles: Article[] = [
     bloglink:
       "https://reet.hashnode.dev/mina-protocol-uncovered-developing-your-own-zkapp",
   },
-  // Add more articles as needed
+  {
+    title: "A beginners' guide to zero-knowledge proofs.",
+    content:
+      "Unlocking the Power and Potential of Zero-Knowledge Proofs",
+    bloglink:
+      "https://reet.hashnode.dev/a-beginners-guide-to-zero-knowledge-proofs",
+  },
+  
 ];
 
 const ArticleComponent: React.FC = () => {
