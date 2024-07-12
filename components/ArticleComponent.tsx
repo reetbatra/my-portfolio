@@ -12,6 +12,13 @@ interface Article {
 
 const topArticles: Article[] = [
   {
+    title: "Mastering Chain Abstraction: How to Simplify Multi-Chain Interactions",
+    content:
+      "Demystifying Chain Abstraction: Simplifying Interactions Across Multiple Blockchains for Beginners",
+    bloglink:
+      "https://reet.hashnode.dev/mastering-chain-abstraction-how-to-simplify-multi-chain-interactions",
+  },
+  {
     title: "Understanding ZK-SNARKS vs. ZK-STARKS",
     content:
       "Deciphering the Key Differences Between ZK-SNARKs and ZK-STARKs: Enhancing Privacy, Security, and Scalability in the Blockchain Ecosystem",
@@ -52,6 +59,7 @@ const topArticles: Article[] = [
     bloglink:
       "https://reet.hashnode.dev/a-beginners-guide-to-zero-knowledge-proofs",
   },
+
   
 ];
 
