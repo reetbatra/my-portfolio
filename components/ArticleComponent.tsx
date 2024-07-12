@@ -25,13 +25,13 @@ const topArticles: Article[] = [
     bloglink:
       "https://reet.hashnode.dev/understadning-zk-snarks-vs-zk-starks",
   },
-  {
-    title: "Dive deeper: Polygon's zkEVM",
-    content:
-      "Breaking down the complexities: Everything you need to know about Polygon's zkEVM and its significance.",
-    bloglink:
-      "https://reet.hashnode.dev/dive-deeper-polygons-zkevm",
-  },
+  // {
+  //   title: "Dive deeper: Polygon's zkEVM",
+  //   content:
+  //     "Breaking down the complexities: Everything you need to know about Polygon's zkEVM and its significance.",
+  //   bloglink:
+  //     "https://reet.hashnode.dev/dive-deeper-polygons-zkevm",
+  // },
   {
     title: "A beginners guide on How to build and publish your own NPM package",
     content:
