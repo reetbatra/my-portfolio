@@ -1,88 +1,63 @@
-"use client";
-
-import GLOBE from "vanta/src/vanta.globe";
 import Link from "next/link";
-import * as THREE from "three";
-import { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+
 export default function Hero() {
-	const [vantaEffect, setVantaEffect] = useState(0);
-	const vantaRef = useRef(null);
- 
-	useEffect(() => {
-		if (!vantaEffect) {
-			setVantaEffect(
-				GLOBE({
-					el: vantaRef.current,
-					THREE: THREE,
-					mouseControls: true,
-					touchControls: true,
-					gyroControls: false,
-					minHeight: 200.0,
-					minWidth: 200.0,
-					scale: 1.0,
-					scaleMobile: 1.0,
-					color: 0x6b21a8,
-					backgroundColor: 0x020617,
-				})
-			);
-		}
-	}, [vantaEffect]);
-	return (
-		<div 
-			className='bg-slate-950 min-h-screen w-full flex flex-col justify-center items-start text-gray-200'
-			ref={vantaRef}>
-			<div className=' mx-12 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32'>
-				<h1 className='tracking-wider font-bold text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl '>
-					Reet Batra
-				</h1>
-				<h2 className='tracking-wider text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl mt-4 font-semilight'>
-					Developer | DevRel
-				</h2>
-				<div className='flex space-x-6 my-4'>
-					<Link
-						href='https://github.com/reetbatra'
-						target='_blank'
-						passHref>
-						<p rel='noopener noreferrer'>
-							<FaGithub />
-						</p>
-					</Link>
-					<Link
-						href='https://reet.hashnode.dev/'
-						target='_blank'
-						passHref>
-						<p rel='noopener noreferrer'>
-							<FaDev />
-						</p>
-					</Link>
-					<Link
-						href='https://x.com/reet_batra'
-						target='_blank'
-						passHref>
-						<p rel='noopener noreferrer'>
-							<BsTwitterX />
-						</p>
-					</Link>
-					<Link
-						href='https://www.linkedin.com/in/reet-batra/'
-						target='_blank'
-						passHref>
-						<p rel='noopener noreferrer'>
-							<FaLinkedinIn />
-						</p>
-					</Link>
-				</div>
-				<a
-					href='https://drive.google.com/file/d/1bEFjh0nAX7vX5Hw9BpIM5CB05UNJFVxZ/view?usp=sharing'
-					target='_blank' //
-					download='Reet_Batra_Resume.pdf'>
-					<button className='tracking-wider border-purple-800 border-2 rounded-lg font-medium text-white px-4 py-2 mt-4 text-sm md:text-lg lg:text-xl transition-all duration-300 ease-in-out hover:bg-purple-800 focus:outline-none focus:ring focus:border-purple-900'>
-						Download Resume
-					</button>
-				</a>
-			</div>
-		</div>
-	);
+  return (
+    <div className='relative bg-slate-950 min-h-screen w-full flex flex-col justify-center items-start text-gray-200 overflow-hidden'>
+      <div className='hero-orb hero-orb-1' />
+      <div className='hero-orb hero-orb-2' />
+      <div className='hero-orb hero-orb-3' />
+
+      <div className='relative z-10 mx-12 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32'>
+        <p className='text-purple-400 tracking-[0.3em] text-xs uppercase font-semibold mb-5'>
+          Developer Advocate
+        </p>
+        <h1 className='tracking-tight font-bold text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl'>
+          Reet Batra
+        </h1>
+        <h2 className='text-lg sm:text-xl md:text-xl lg:text-2xl mt-5 font-light text-gray-400 max-w-xl leading-relaxed'>
+          Building at the intersection of{' '}
+          <span className='text-purple-400 font-medium'>crypto × AI</span>
+        </h2>
+        <div className='flex space-x-5 my-7'>
+          <Link href='https://github.com/reetbatra' target='_blank' passHref>
+            <span className='text-gray-400 hover:text-white transition-colors duration-200 text-xl cursor-pointer'>
+              <FaGithub />
+            </span>
+          </Link>
+          <Link href='https://reet.hashnode.dev/' target='_blank' passHref>
+            <span className='text-gray-400 hover:text-white transition-colors duration-200 text-xl cursor-pointer'>
+              <FaDev />
+            </span>
+          </Link>
+          <Link href='https://x.com/reet_batra' target='_blank' passHref>
+            <span className='text-gray-400 hover:text-white transition-colors duration-200 text-xl cursor-pointer'>
+              <BsTwitterX />
+            </span>
+          </Link>
+          <Link href='https://www.linkedin.com/in/reet-batra/' target='_blank' passHref>
+            <span className='text-gray-400 hover:text-white transition-colors duration-200 text-xl cursor-pointer'>
+              <FaLinkedinIn />
+            </span>
+          </Link>
+        </div>
+        <div className='flex flex-wrap gap-3 mt-1'>
+          <a href='mailto:reetbatra25@gmail.com'>
+            <button className='tracking-wider bg-purple-700 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg text-sm md:text-base transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500'>
+              Hire Me
+            </button>
+          </a>
+          <a
+            href='https://drive.google.com/file/d/1bEFjh0nAX7vX5Hw9BpIM5CB05UNJFVxZ/view?usp=sharing'
+            target='_blank'
+            download='Reet_Batra_Resume.pdf'>
+            <button className='tracking-wider border-purple-800 border-2 text-white font-medium px-6 py-3 rounded-lg text-sm md:text-base transition-all duration-300 ease-in-out hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500'>
+              Resume
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }

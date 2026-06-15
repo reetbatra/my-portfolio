@@ -74,7 +74,7 @@ const POW = () => {
 										<Link
 										href="https://x.com/stark_con/status/1605872741944418305">
 										<p className='text-lg font-light text-white mr-6'>
-											Had a pleasure teaching Cairo to 4800+ devs pan Inida
+											Had a pleasure teaching Cairo to 4800+ devs pan India
 										</p>
 										</Link>
 										
@@ -98,7 +98,7 @@ const POW = () => {
 										<Link
 										href="https://x.com/stark_con/status/1628659312498462721">
 										<p className='text-lg font-light text-white mr-6'>
-											Organised Inida&apos;s first Cairo bootcamp
+											Organised India&apos;s first Cairo bootcamp
 										</p>
 										</Link>	
 									</div>
