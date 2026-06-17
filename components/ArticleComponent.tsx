@@ -49,33 +49,45 @@ const topArticles: Article[] = [
 const ArticleComponent: React.FC = () => {
   useEffect(() => {
     const AOS = require("aos");
-    AOS.init();
+    AOS.init({ once: true, duration: 500 });
   }, []);
 
   return (
-    <div className='articles-bg top-articles w-full min-h-screen flex flex-col items-center justify-center'>
-      <h1 className='tracking-wider text-white text-4xl lg:text-5xl font-bold mb-4 mt-12'>
-        Top Articles
+    <div className='articles-bg w-full py-20 px-6 sm:px-12 md:px-16 lg:px-28 xl:px-36'>
+
+      {/* Section label */}
+      <div className='flex items-center gap-3 mb-5'>
+        <span className='w-6 h-px bg-emerald-500' />
+        <span className='text-emerald-400 tracking-[0.3em] text-[10px] uppercase font-semibold'>
+          03 / Writing
+        </span>
+      </div>
+
+      <h1 className='tracking-tight text-white text-4xl lg:text-5xl font-bold mb-12'>
+        Top articles
       </h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12 mb-32 mx-6 sm:mx-10 xl:mx-32'>
+
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8'>
         {topArticles.map((article, index) => (
           <div
             key={index}
-            className='bg-white px-6 lg:px-8 xl:px-10 py-6 rounded-xl flex flex-col items-start justify-between'
+            className='border border-slate-800 hover:border-emerald-900 bg-slate-900/30 hover:bg-slate-900/60 rounded-2xl px-7 py-6 flex flex-col justify-between gap-4 transition-all duration-300'
             data-aos='fade-up'
-            data-aos-delay={`${index * 100}`}>
-            <h2 className='tracking-wider text-purple-600 font-bold text-xl lg:text-2xl'>
-              {article.title}
-            </h2>
-            <p className='tracking-wider mt-4 text-black text-sm leading-relaxed'>
-              {article.content}
-            </p>
+            data-aos-delay={`${index * 80}`}>
+            <div>
+              <h2 className='text-white font-semibold text-base leading-snug'>
+                {article.title}
+              </h2>
+              <p className='mt-3 text-gray-500 text-sm leading-relaxed'>
+                {article.content}
+              </p>
+            </div>
             <a
               href={article.bloglink}
               target='_blank'
               rel='noopener noreferrer'
-              className='block tracking-wider border-purple-500 border-2 rounded-lg font-bold text-purple-500 hover:text-white px-4 py-2 mt-4 text-sm transition-all duration-300 ease-in-out hover:bg-purple-500 focus:outline-none focus:ring focus:border-purple-900'>
-              Read More
+              className='inline-flex w-fit rounded-full border border-emerald-800 text-emerald-400 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 px-5 py-2 text-xs font-semibold tracking-wider transition-all duration-300'>
+              Read More →
             </a>
           </div>
         ))}

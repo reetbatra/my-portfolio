@@ -2,81 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Glow border on project cards ─────────────────────────────────── */
 @keyframes glowing {
-  0%   { box-shadow: 0 0 5px rgba(107, 33, 168, 0.7); }
-  50%  { box-shadow: 0 0 20px rgba(107, 33, 168, 0.9); }
-  100% { box-shadow: 0 0 5px rgba(107, 33, 168, 0.7); }
+  0%   { box-shadow: 0 0 5px rgba(16, 185, 129, 0.4), 0 0 5px rgba(109, 40, 217, 0.4); }
+  50%  { box-shadow: 0 0 20px rgba(16, 185, 129, 0.6), 0 0 20px rgba(109, 40, 217, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.4), 0 0 5px rgba(109, 40, 217, 0.4); }
 }
 
 .glow-border {
-  animation: glowing 2s infinite;
-  border: 2px solid #6b21a8;
+  animation: glowing 3s ease-in-out infinite;
+  border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
+/* ── AOS fade ──────────────────────────────────────────────────────── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Hero animated orbs */
-.hero-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  pointer-events: none;
+/* ── Hero background ───────────────────────────────────────────────── */
+/* Inspired by Obed Balogun's green → purple gradient aesthetic,
+   adapted for dark mode: emerald glow bottom-left, purple top-right */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 70% 70% at 0% 100%,  rgba(5, 150, 105, 0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 100% 0%,  rgba(109, 40, 217, 0.28) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 60% 50%,  rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+    #020617;
 }
 
-.hero-orb-1 {
-  width: 520px;
-  height: 520px;
-  background: rgba(109, 40, 217, 0.22);
-  top: -130px;
-  right: 3%;
-  animation: float-1 13s ease-in-out infinite;
-}
-
-.hero-orb-2 {
-  width: 380px;
-  height: 380px;
-  background: rgba(107, 33, 168, 0.16);
-  bottom: 8%;
-  left: -60px;
-  animation: float-2 16s ease-in-out infinite;
-}
-
-.hero-orb-3 {
-  width: 240px;
-  height: 240px;
-  background: rgba(168, 85, 247, 0.1);
-  top: 42%;
-  left: 42%;
-  animation: float-3 10s ease-in-out infinite;
-}
-
-@keyframes float-1 {
-  0%, 100% { transform: translate(0, 0); }
-  50%       { transform: translate(-35px, 45px); }
-}
-
-@keyframes float-2 {
-  0%, 100% { transform: translate(0, 0); }
-  50%       { transform: translate(40px, -30px); }
-}
-
-@keyframes float-3 {
-  0%, 100% { transform: translate(0, 0); }
-  33%       { transform: translate(18px, -22px); }
-  66%       { transform: translate(-16px, 12px); }
-}
-
-/* Articles section animated gradient */
+/* ── Articles animated gradient ───────────────────────────────────── */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50%       { background-position: 100% 50%; }
 }
 
 .articles-bg {
-  background: linear-gradient(-45deg, #020617, #0c0618, #100720, #020617);
+  background: linear-gradient(-45deg, #020617, #071f14, #0c0618, #020617);
   background-size: 400% 400%;
   animation: gradient-shift 20s ease infinite;
+}
+
+/* ── Grain texture overlay (optional, adds tactile depth) ─────────── */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.3;
 }

@@ -1,20 +1,15 @@
-// Footer.tsx
-
-import React from 'react';
-import { FaEnvelope } from 'react-icons/fa';
+import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 text-white p-4 w-full ">
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-2xl mx-auto">
-        <div className="flex items-center">
-          <span className="font-bold text-lg tracking-wider text-purple-500">Reet Batra</span>
-        </div>
-        <div className="flex items-center">
-        <FaEnvelope className="ml-2 md:ml-4" /> &nbsp;
-          <span className="inline-block tracking-wider"> reetbatra25@gmail.com</span>
-          
-        </div>
+    <footer className='bg-slate-950 border-t border-slate-900 w-full py-8 px-6 sm:px-12 md:px-16 lg:px-28 xl:px-36'>
+      <div className='flex flex-col sm:flex-row items-center justify-between gap-2'>
+        <span className='font-semibold text-sm tracking-widest text-gray-600 uppercase'>
+          Reet Batra
+        </span>
+        <span className='text-gray-700 text-xs'>
+          reetbatra25@gmail.com
+        </span>
       </div>
     </footer>
   );

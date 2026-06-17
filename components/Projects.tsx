@@ -54,16 +54,26 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <div className='min-h-screen w-full bg-slate-950 flex flex-col items-center justify-center'>
-      <h1 className='text-white text-4xl lg:text-5xl font-bold tracking-wider mt-12'>
-        Projects
+    <section className='bg-slate-950 w-full py-20 px-6 sm:px-12 md:px-16 lg:px-28 xl:px-36'>
+
+      {/* Section label */}
+      <div className='flex items-center gap-3 mb-5'>
+        <span className='w-6 h-px bg-emerald-500' />
+        <span className='text-emerald-400 tracking-[0.3em] text-[10px] uppercase font-semibold'>
+          05 / Projects
+        </span>
+      </div>
+
+      <h1 className='tracking-tight text-white text-4xl lg:text-5xl font-bold mb-12'>
+        Things I&apos;ve built
       </h1>
-      <div className='mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 w-full'>
+
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -75,14 +85,16 @@ const ProjectCard: React.FC<(typeof projects)[0]> = ({
   liveLink,
 }) => {
   return (
-    <div className='bg-slate-950 rounded-xl p-6 glow-border flex flex-col justify-between gap-4'>
+    <div className='glow-border rounded-2xl p-6 flex flex-col justify-between gap-5 bg-slate-900/20 hover:bg-slate-900/40 transition-colors duration-300 group'>
       <div>
-        <h3 className='tracking-wider text-white text-xl font-bold mb-3'>{title}</h3>
-        <div className='flex flex-wrap gap-2 mb-3'>
+        <h3 className='text-white text-lg font-semibold mb-3 group-hover:text-emerald-300 transition-colors duration-300'>
+          {title}
+        </h3>
+        <div className='flex flex-wrap gap-1.5 mb-4'>
           {stack.map((tech, i) => (
             <span
               key={i}
-              className='text-[10px] uppercase tracking-widest text-purple-400 border border-purple-900 px-2 py-0.5 rounded'>
+              className='text-[9px] uppercase tracking-widest text-gray-500 border border-slate-700 px-2 py-0.5 rounded-full'>
               {tech}
             </span>
           ))}
@@ -94,16 +106,16 @@ const ProjectCard: React.FC<(typeof projects)[0]> = ({
           href={githubLink}
           target='_blank'
           rel='noopener noreferrer'
-          className='flex items-center gap-2 tracking-wider bg-purple-700 text-white py-2 px-4 rounded-md text-sm transition duration-300 hover:bg-purple-600'>
-          <FaGithub /> GitHub
+          className='flex items-center gap-2 rounded-full bg-emerald-700/20 hover:bg-emerald-600 border border-emerald-800/40 text-emerald-300 hover:text-white py-2 px-4 text-xs font-medium transition-all duration-300'>
+          <FaGithub size={12} /> GitHub
         </a>
         {liveLink && (
           <a
             href={liveLink}
             target='_blank'
             rel='noopener noreferrer'
-            className='flex items-center gap-2 tracking-wider border-purple-800 border-2 text-white py-2 px-4 rounded-md text-sm transition duration-300 hover:bg-purple-600 hover:border-purple-600'>
-            <FaExternalLinkAlt size={12} /> Live
+            className='flex items-center gap-2 rounded-full border border-slate-700 hover:border-emerald-700 text-gray-400 hover:text-white py-2 px-4 text-xs font-medium transition-all duration-300'>
+            <FaExternalLinkAlt size={10} /> Live
           </a>
         )}
       </div>

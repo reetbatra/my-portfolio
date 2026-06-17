@@ -25,21 +25,31 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <section className='bg-slate-950 w-full py-20 px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32'>
-      <h1 className='tracking-wider text-white text-4xl lg:text-5xl font-bold mb-12'>
-        Experience
+    <section className='bg-slate-950 w-full py-20 px-6 sm:px-12 md:px-16 lg:px-28 xl:px-36'>
+
+      {/* Section label */}
+      <div className='flex items-center gap-3 mb-5'>
+        <span className='w-6 h-px bg-emerald-500' />
+        <span className='text-emerald-400 tracking-[0.3em] text-[10px] uppercase font-semibold'>
+          01 / Experience
+        </span>
+      </div>
+
+      <h1 className='tracking-tight text-white text-4xl lg:text-5xl font-bold mb-12'>
+        Where I&apos;ve worked
       </h1>
-      <div className='flex flex-col gap-6'>
+
+      <div className='flex flex-col gap-5'>
         {experiences.map((exp, i) => (
           <div
             key={i}
-            className='border border-slate-800 hover:border-purple-800 transition-colors duration-300 rounded-xl p-6 sm:p-8 bg-slate-900/30'>
-            <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5'>
+            className='border border-slate-800 hover:border-emerald-900 transition-colors duration-300 rounded-2xl p-7 sm:p-9 bg-slate-900/20 group'>
+            <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-6'>
               <div>
-                <h2 className='text-purple-400 text-2xl font-bold tracking-wide'>
+                <h2 className='text-2xl font-bold tracking-wide bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text text-transparent'>
                   {exp.company}
                 </h2>
-                <p className='text-gray-400 text-sm mt-1 tracking-widest uppercase'>
+                <p className='text-gray-500 text-xs mt-1.5 tracking-[0.2em] uppercase'>
                   {exp.role}
                 </p>
               </div>
@@ -47,18 +57,18 @@ const Experience: React.FC = () => {
                 {exp.tags.map((tag, j) => (
                   <span
                     key={j}
-                    className='text-xs border border-purple-900 text-purple-400 px-2 py-1 rounded-md tracking-wider'>
+                    className='text-[10px] border border-slate-700 group-hover:border-emerald-900 text-gray-400 px-2.5 py-1 rounded-full tracking-wider transition-colors duration-300'>
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
-            <ul className='flex flex-col gap-3'>
+            <ul className='flex flex-col gap-3.5'>
               {exp.highlights.map((point, j) => (
                 <li
                   key={j}
                   className='flex items-start gap-3 text-gray-300 text-sm sm:text-base leading-relaxed'>
-                  <span className='text-purple-500 mt-1 shrink-0'>▹</span>
+                  <span className='text-emerald-500 mt-1 shrink-0 text-xs'>▹</span>
                   {point}
                 </li>
               ))}
