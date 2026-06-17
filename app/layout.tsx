@@ -26,8 +26,8 @@ const ibmPlex= IBM_Plex_Sans({
 	display: "swap",
 });
 export const metadata: Metadata = {
-	title: 'Reet Batra - Portfolio',
-	description: 'Developer | DevRel',
+	title: 'Reet Batra — Developer Advocate',
+	description: 'Developer Advocate building at the intersection of crypto × AI. DevRel at StarkWare & DablClub.',
   }
 
 export default function RootLayout({
